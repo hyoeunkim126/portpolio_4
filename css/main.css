@@ -1,43 +1,55 @@
 @charset "UTF-8";
-
-nav{width: 100%; height: 100px; margin: 0 auto;
+.container{width: 1200px; height: 100%; margin: 0 auto; border: 1px solid red;}
+ 
+header{width: 100%; height: 100px; margin: 0 auto;
   position: absolute; top: 0; left: 0; z-index: 3;}
-.container{width: 1200px; display: flex; justify-content: space-between; align-items: center; 
+#logonav{width: 1200px; display: flex; justify-content: space-between; align-items: center; 
 padding: 10px; margin: 0 auto;}
-.container .logo{width: 150px; height: 80px;}
-.container .logo img{width: 70%;}
+#logonav .logo{width: 150px; height: 80px;}
+#logonav .logo img{width: 70%;}
 
 .nav_bar{display: flex; }
 .nav_bar .nav_item .nav_link{font-size: 16px; color: #eee; font-weight: 700;
   margin-left: 20px; font-family: 'Pretendard-Regular';
   opacity: 0.6; transition: .3s all ease;}
-.leica_item>a{color: #ff0029;}
 
 .nav_bar .nav_item .nav_link:hover{opacity: 1;}
 
 #slider{width: 100%; height: 750px; }
-#slider .s_photo1{width:100%; height: 750px; position: relative; top:0; left: 0;  
-  background-image: url("../img/Top_main_web_11.jpg"); z-index: -2; filter:s(100%) }
+
+#slider .s_photo1{width:100%; height: 750px;  position: relative;  
+  background-image: url("../img/Top_main_web_11.jpg"); z-index: -2; }
 #slider .s_photo1::after{content: ""; width: 50%; height: 750px;  background-color: black; 
-  position: absolute; top: 0; left: 0; opacity: 0.5; z-index: 0;}
-#slider .slide_photo{position: relative;}
-#slider .slide_photo .text_box{border: 1px solid gold; position: absolute; 
-  top:50%; left: 10%; margin-top: -100px; z-index: 3; padding: 20px;}
+  position: absolute; top: 0; left: 0; opacity: 0.6; z-index: 0;}
+#slider .s_photo1 .container{display: flex; align-items: center; }
+#slider .s_photo1 .text_box{ width: 50%;  padding: 20px; position: absolute; left:50%; margin-left: -600px; z-index: 3;}
 #slider .text_box h2{color: white; font-size:50px; padding-bottom: 10px ;}
 #slider .text_box h4{color: rgb(233, 233, 233); font-size:20px; padding-bottom: 10px ;}
-#slider .text_box p{ width: 30%; height: 30px; padding: 10px 20px; 
+#slider .text_box p{ width: 200px; height: 40px;  
                      background-color: #ff0029 ; display: flex;}
-#slider .text_box p a, i{color: white; }
+#slider .text_box p a{color: white; text-align: center;}
 #slider .text_box p i{font-size: 20px; }
 
-.bg_fixed{width: 100%; height: 250px; position: relative;}
-.bg_fixed .menu_background{width: 100%; height: 250px; background: url("../img/leica_fixed.jpg")fixed; 
-  background-size: cover; background-position: center; filter: brightness(0.15);}
-  .bg_fixed .menu_background .menu{width: 100%; height: 200px; 
-    position: absolute; top:10%; left: 10px; border: 1px solid gold;}
-  .bg_fixed .menu_background .menu li{width: 25%;height: 100px; border: 1px solid gold;}
+.menu_slide_title{width: 100%; height:250px; position: relative; z-index: 1; }
+.menu_slide_title::after{width: 100%; height: 250px; background: url("../img/leica_fixed.jpg")fixed; 
+    filter: brightness(0.1); content: ""; position: absolute; left: 0; top: 0; z-index: -1;}
+#slide_menu{height: 250px; }
+#slide_menu ul {display: flex; padding-top: 80px; }
+#slide_menu ul li{ width: 25%; height:80px; display: flex; align-items: center;
+                   justify-content: center; margin: 5px; }  
+#slide_menu ul li a{color: rgb(255, 255, 255); text-align: center;}
+#slide_menu ul li span{font-size: 20px; font-weight: 900; }
+#slide_menu ul li .second{font-size: 14px;}
 
-  
-.change_to_leica{width: 100%; height: 500px; margin: 0 auto; display: flex;}
-.left{width: 50%; background-color: #eee;}
-.right{width: 50%; background-color: burlywood;}
+#change_to_leica{width: 100%; height: 750px;    }
+#change_to_leica .container{width: 100%; display: flex; position: relative;}
+
+#change_to_leica .container .left{width: 50%; height: 750px; border: 1px solid red; }
+.text_system{max-width: 1200px; top:0; right: 0; position:absolute;}
+#change_to_leica .container .right{width: 50%; height: 750px; background:url("../img/img_goods_banner08_210104.jpg");
+  background-size: cover; background-position: center;}
+
+#customer_service{width: 100%; height: 750px; margin: 0 auto; border:1px solid aqua;}
+
+
+footer{width: 100%; height: 200px; background-color: gray; border:1px solid aqua;}
