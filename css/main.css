@@ -8,7 +8,8 @@ padding: 10px; margin: 0 auto;}
 #logonav .logo{width: 150px; height: 80px;}
 #logonav .logo img{width: 70%;}
 
-.nav_bar{display: flex; }
+.nav_bar{width: 50%;}
+.nav_bar ul{display: flex; justify-content: space-around; }
 .nav_bar .nav_item .nav_link{font-size: 16px; color: #eee; font-weight: 700;
   margin-left: 20px; font-family: 'Pretendard-Regular';
   opacity: 0.6; transition: .3s all ease;}
