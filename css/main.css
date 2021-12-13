@@ -45,7 +45,7 @@ padding: 10px; margin: 0 auto;}
 #change_to_leica .container{width: 100%; display: flex; position: relative;}
 
 #change_to_leica .container .left{width: 50%; height: 750px; border: 1px solid red; }
-.text_system{max-width: 1200px; top:0; right: 0; position:absolute;}
+.text_system{width: 600px; top:0; left: 50%; margin-left: -600px; position:absolute;}
 #change_to_leica .container .right{width: 50%; height: 750px; background:url("../img/img_goods_banner08_210104.jpg");
   background-size: cover; background-position: center;}
 
