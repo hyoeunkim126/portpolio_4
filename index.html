@@ -24,21 +24,31 @@
                     currentScrollTop = $(window).scrollTop();
                         if(currentScrollTop > 900) {
                             $("header").addClass("active");
-                            $(".nav_bar").addClass("fixed");
-                            $("nav_link").addClass("txtCh");
+                            $(".nav_link").css("color", "#333");
                             }else{
                             $("header").removeClass("active");
-                            $(".nav_bar").removeClass("fixed")
-                            $("nav_link").removeClass("txtCh");
+                            $(".nav_link").css("color", "#eee");
                                 }
                             }
+        var i=0;
+        function slide(){
+            i++;
+            if(i>$('.slide li:last').index()){
+                i=0;
+            }
+            $('.slide li').eq(i).stop().fadeIn('slow');
+            $('.slide li').eq(i-1).stop().fadeOut();
+
+        };
+        setInterval(slide,3000);
+        
+        
+
     </script>
     <style>
-        .active{background-color: white;}
-        .fixed{width: 100%; height: 80px; 
+        .active{position: fixed; z-index: 999; width: 100%; height: 90px; 
             top: 0; left: 0; padding-top: 20px;
-            background: white; position:fixed;}
-         .txtCh{color:#333; }
+            background: white;  box-shadow:1px 1px 1px rgba(149, 149, 149, 0.5); }
     </style>
 </head>
 <body>
@@ -63,21 +73,52 @@
     </header>
     <div id="slider">
         <div class="s_photo1">
-            <div class="container">
-                <div class="text_box">
-                    <h2>여행은 곧 운명</h2>
-                    <h4>Leica D-LUX7 Vans X Ray Barbee Edition</h4>
-                    <div><a href="#">더 알아보기<ion-icon name="arrow-forward-outline"></ion-icon></a></div>
-                </div>
-                <div></div>
-            </div>
+            <ul class="slide">
+                <li><img src="img/Top_main_web_01.jpg" alt="slide img">
+                    <div class="container">
+                        <div class="text_box">
+                            <h2>Kevlar 소재의 바디 아머</h2>
+                            <h4>Leica Q2 Reporter</h4>
+                            <div><a href="#">더 알아보기<ion-icon name="arrow-forward-outline"></ion-icon></a></div>
+                        </div>
+                        <div style="width: 50%;"></div>
+                    </div></li>
+                <li><img src="img/Top_main_web_2.jpg" alt="slide img">
+                    <div class="container">
+                        <div class="text_box">
+                            <h2>LEICA X HELINOX</h2>
+                            <h4>Special Package Edition</h4>
+                            <div><a href="#">더 알아보기<ion-icon name="arrow-forward-outline"></ion-icon></a></div>
+                        </div>
+                        <div style="width: 50%;"></div>
+                    </div></li>
+                <li><img src="img/Top_main_web_3.jpg" alt="slide img">
+                    <div class="container">
+                        <div class="text_box">
+                            <h2>새로운 M10-R</h2>
+                            <h4>Leica M10-R black paint finish</h4>
+                            <div><a href="#">더 알아보기<ion-icon name="arrow-forward-outline"></ion-icon></a></div>
+                        </div>
+                        <div style="width: 50%;"></div>
+                    </div></li>
+                <li><img src="img/top_main_web_4.jpg" alt="slide img">
+                    <div class="container">
+                        <div class="text_box">
+                            <h2>다시 태어난 전설</h2>
+                            <h4>Noctilux-M 50 f/1.2</h4>
+                            <div><a href="#">더 알아보기<ion-icon name="arrow-forward-outline"></ion-icon></a></div>
+                        </div>
+                        <div style="width: 50%;"></div>
+                    </div></li>
+            </ul>
+            
             
         </div>
     </div>
     <div class="menu_slide_title">
         <div class="container" id="slide_menu">
             <ul>
-                <li><a href="#"><span>여행은 곧 운명 </span><br><span class="second">Leica D-LUX7 Vans X Ray</span></a></li>
+                <li><a href="#"><span>Kevlar 소재의 바디 아머 </span><br><span class="second">Leica Q2 Reporter</span></a></li>
                 <li><a href="#"><span>LEICA X HELINOX</span><br><span class="second">Special Package Edition</span></a></li>
                 <li><a href="#"><span>새로운 M10-R</span><br><span class="second">Leica M10-R black paint finish</span></a></li>
                 <li><a href="#"><span>다시 태어난 전설</span><br><span class="second">Noctilux-M 50 f/1.2</span></a></li>
