@@ -12,39 +12,7 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
-    <script>
-        var currentScrollTop=0;
-        $(document).ready(function(){
-                    scrollController();
-                    $(window).scroll(function(){
-                        scrollController();
-                        });
-                    });
-                    function scrollController(){
-                    currentScrollTop = $(window).scrollTop();
-                        if(currentScrollTop > 900) {
-                            $("header").addClass("active");
-                            $(".nav_link").css("color", "#333");
-                            }else{
-                            $("header").removeClass("active");
-                            $(".nav_link").css("color", "#eee");
-                                }
-                            }
-        var i=0;
-        function slide(){
-            i++;
-            if(i>$('.slide li:last').index()){
-                i=0;
-            }
-            $('.slide li').eq(i).stop().fadeIn('slow');
-            $('.slide li').eq(i-1).stop().fadeOut();
-
-        };
-        setInterval(slide,3000);
-        
-        
-
-    </script>
+    <script src="js/leica.js"></script>
     <style>
         .active{position: fixed; z-index: 999; width: 100%; height: 90px; 
             top: 0; left: 0; padding-top: 20px;
@@ -117,11 +85,11 @@
     </div>
     <div class="menu_slide_title">
         <div class="container" id="slide_menu">
-            <ul>
-                <li><a href="#"><span>Kevlar 소재의 바디 아머 </span><br><span class="second">Leica Q2 Reporter</span></a></li>
-                <li><a href="#"><span>LEICA X HELINOX</span><br><span class="second">Special Package Edition</span></a></li>
-                <li><a href="#"><span>새로운 M10-R</span><br><span class="second">Leica M10-R black paint finish</span></a></li>
-                <li><a href="#"><span>다시 태어난 전설</span><br><span class="second">Noctilux-M 50 f/1.2</span></a></li>
+            <ul>d
+                <li><a href="#" class="m1"><span>Kevlar 소재의 바디 아머 </span><br><span class="second">Leica Q2 Reporter</span></a></li>
+                <li><a href="#" class="m2"><span>LEICA X HELINOX</span><br><span class="second">Special Package Edition</span></a></li>
+                <li><a href="#" class="m3"><span>새로운 M10-R</span><br><span class="second">Leica M10-R black paint finish</span></a></li>
+                <li><a href="#" class="m4"><span>다시 태어난 전설</span><br><span class="second">Noctilux-M 50 f/1.2</span></a></li>
             </ul>
         </div>
     </div>
@@ -176,22 +144,77 @@
             </div>
     </section>
 
-    <section class="works">
-        <h4>2nd Hand</h4>
-        <h1>"Pre-Loved"<br>
-            라이카 세컨드 핸드 서비스 오픈<br>
-            중고제품 매입/판매 안내</h1>
-<article></article>
-        <article></article>
-        <article></article>
-        <article></article>
-        <article></article>
-        <article></article>
-        <article></article>
-        <article></article>
+    <div class="works">
+        <h1>AKADEMIE SCHEDULE</h1>
+        <div class="schedule_wrap">
+            <div>
+                <a href="#"><img src="img/list_44.jpg"></a>
+                <div class="click_text_box"> 
+                    <h2>라이카 Q2로 사진 찍기 </h2><br><br>
+                    <span>2021.12.12</span><br>
+                    <span>워크룸성수</span>
+                </div>
+            </div>
+            <div>
+                <a href="#"><img src="img/list_42.jpg"></a>
+                <div class="click_text_box"> 
+                    <h2>라이카 Q2로 사진 찍기 </h2><br><br>
+                    <span>2021.10.31</span><br>
+                    <span>워크룸성수</span>
+                </div>
+            </div>
+            <div>
+                <a href="#"><img src="img/list_40.jpg"></a>
+                <div class="click_text_box"> 
+                    <h2>라이카 Q2로 사진 찍기 </h2><br><br>
+                    <span>2021.09.25</span><br>
+                    <span>아워레이보</span>
+                </div>
+            </div>
+            <div>
+                <a href="#"><img src="img/list_mo_4.jpg"></a>
+                <div class="click_text_box"> 
+                    <h2>라이카 살롱 2021 </h2><br><br>
+                    <span>2021.09.16</span><br>
+                    <span>라이카 카메라 청담스토어</span>
+                </div>
+            </div>
+            <div>
+                <a href="#"><img src="img/list_32.jpg"></a>
+                <div class="click_text_box"> 
+                    <h2>Q로 거리사진 찍기:<br>출사와 리뷰 </h2><br><br>
+                    <span>2021.05.29</span><br>
+                    <span>작가의 작업실</span>
+                </div>
+            </div>
+            <div>
+                <a href="#"><img src="img/list_30_1.jpg"></a>
+                <div class="click_text_box"> 
+                    <h2>라이카 Q사용법 배워보기 </h2><br><br>
+                    <span>2021.05.15</span><br>
+                    <span>라이카 스토어 청담</span>
+                </div>
+            </div>
+            <div>
+                <a href="#"><img src="img/list_34.jpg"></a>
+                <div class="click_text_box"> 
+                    <h2>흑백사진에 대하여2. </h2><br><br>
+                    <span>2021.05.15</span><br>
+                    <span>작가의 작업실</span>
+                </div>
+            </div>
+            <div>
+                <a href="#"><img src="img/img_ak_list_200524_2.jpg"></a>
+                <div class="click_text_box"> 
+                    <h2>D-LUX 사용법 및 활용법 배워보기 </h2><br><br>
+                    <span>2021.05.01</span><br>
+                    <span>라이카 스토어 신세계 본점</span>
+                </div>
+            </div>
+        </div>
         
 
-    </section>
+    </div>
     <footer>
         <div class="container"></div>
     </footer>
