@@ -28,7 +28,7 @@ var currentScrollTop=0;
         setInterval(slide,3000);
         
         var slidemenu = $("#slide_menu ul li");
-        var contents = $("#slider .s_photo1 ul li");
+        var contents = $("#slider .slide li");
         $(function(){
             slidemenu.click(function(){
                 var target=$(this);
