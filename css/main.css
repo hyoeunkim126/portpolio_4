@@ -1,5 +1,10 @@
 @charset "UTF-8";
 .container{width: 1200px; height: 100%; margin: 0 auto; }
+.red_title{width: 100%; color: #ff0029; text-align: center;  padding-bottom: 20px;}
+.h1_title{width: 100%; text-align: center; font-size: 28px; 
+          padding-bottom: 50px; font-weight: 800;}
+
+
  /* 상단메뉴 */
 header{width: 100%; height: 100px; 
   position: absolute; top: 0; left: 0; z-index: 3;}
@@ -58,7 +63,7 @@ padding: 10px; margin: 0 auto;}
 #change_to_leica .text_system{width: 600px; height: 100%; 
               top:0; left: 50%; margin-left: -600px; 
               position:absolute; padding: 250px 0 0 30px;}
-#change_to_leica .text_system h4{color: #ff0029; padding-bottom: 20px;}
+#change_to_leica .text_system h4{text-align: left;}
 #change_to_leica .text_system h1{font-size: 30px; padding-bottom: 20px;}
 #change_to_leica .text_system div{ width: 200px; height: 50px;  
   background-color: #ff0029 ; display: flex; justify-content: center; align-items: center;}
@@ -79,7 +84,7 @@ padding: 10px; margin: 0 auto;}
   #customer_service .container .right{width: 50%;}
   #customer_service .container .right .text_system{width: 600px; 
       height: 100%; padding: 250px 0 0 30px; }
-.text_system h4{color: #ff0029; padding-bottom: 20px;}
+.text_system h4{text-align: left;}
 .text_system h1{font-size: 30px; padding-bottom: 20px;}
 #customer_service .container .right .text_system div{ width: 200px; height: 50px;  
   background-color: #ff0029 ; display: flex; justify-content: center; align-items: center;}
@@ -114,21 +119,47 @@ padding: 10px; margin: 0 auto;}
 
 
     /* 아카데미 스케줄  */
-.works{width: 100%; height: auto;  
-      display: flex; flex-wrap: wrap; justify-content: center; align-content: flex-start; }
-.works h1{width: 100%; text-align: center; padding: 50px  0; font-size: 25px;}
-.works .schedule_wrap{width: 1800px; height: auto; display: flex;
+.works{width: 100%; height: auto;  padding: 50px 0;
+      display: flex; flex-wrap: wrap; justify-content: center; 
+      align-content: flex-start; }
+
+.works .schedule_wrap{width: 100%; height: auto; display: flex;
                      flex-wrap: wrap; justify-content: center; }
-.schedule_wrap .schedule_photo{width: 23%; height: 300px; margin: 10px; 
-   position: relative; background-position: center;  background-size: cover;}  
+.schedule_wrap .schedule_photo{background-position: center;  background-size: cover; 
+                               background-repeat: no-repeat;
+                               width: 22%; height: 300px; margin: 10px; 
+                              position: relative; }  
 .click_text_box{display: none; position: absolute; top:0; left: 0; 
   width: 100%; height: 100%; padding-top: 80px;
   color: #fff; background-color: rgba(0, 0, 0, 0.7); 
   text-align: center; transition:1s ease-in-out;}
 .click_text_box h2{font-size: 18px; margin-bottom: 30px;}
 .click_text_box span{font-size: 14px;}
+.click_text_box .icon ion-icon{color: #fff; font-size: 12px; 
+                      position: absolute; right: 0; bottom: 0; width: 40px; height: 40px;
+                    cursor: zoom-in; border-radius: 50%; 
+                    background-color: rgba(0, 0, 0, 0.123); padding: 20px;}
 
 .schedule_wrap > div:hover .click_text_box{display:block; transition:1s ease-in-out;}
 
+/* LEICA EXHIBITION */
+.exhibition_wrap{width: 100%; height: auto; 
+                  background-color: rgb(240, 239, 238);}
+.exhibition{width: 1200px; height: 800px; margin: 0 auto; 
+            padding: 50px 0; }
+.photo_exhibition1{width: 100%; height: 500px; 
+                    background-position: center; 
+                    background-size: cover; 
+                    background-repeat: no-repeat;
+                    }
 
-footer{width: 100%; height: 200px; background-color: gray; border:1px solid aqua;}
+
+footer{width: 100%; height: 500px; padding: 6em 0 0 0;
+       background-color: rgb(17, 17, 17); }
+.sitemap .footer_wrap{display: flex;}
+.sitemap div{margin-right: 50px;}
+.sitemap div p{font-size: 20px;
+                font-weight: 700;
+                color: #fff;;}
+.sitemap div a{font-size: 15px; 
+   color: rgba(255, 255, 255, 0.5);}
