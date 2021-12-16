@@ -114,21 +114,21 @@ padding: 10px; margin: 0 auto;}
 
 
     /* 아카데미 스케줄  */
-.works{width: 100%; height: 1000px;  
+.works{width: 100%; height: auto;  
       display: flex; flex-wrap: wrap; justify-content: center; align-content: flex-start; }
 .works h1{width: 100%; text-align: center; padding: 50px  0; font-size: 25px;}
-.works .schedule_wrap{width: 1800px; height: 800px; display: flex;
+.works .schedule_wrap{width: 1800px; height: auto; display: flex;
                      flex-wrap: wrap; justify-content: center; }
-.schedule_wrap > div{width: 350px; height: 45%; margin: 10px;  position: relative;
-  overflow: hidden; transition: 0.5s;}
-  .schedule_wrap > div img{ width: 100%; height: 100%;}
+.schedule_wrap .schedule_photo{width: 23%; height: 300px; margin: 10px; 
+   position: relative; background-position: center;  background-size: cover;}  
 .click_text_box{display: none; position: absolute; top:0; left: 0; 
-  width: 350px; height: 360px; padding-top: 130px;
-box-sizing: border-box; color: #fff; background-color: rgba(0, 0, 0, 0.7); 
-text-align: center; transition:1s all;}
-.click_text_box span{font-size: 20px;}
+  width: 100%; height: 100%; padding-top: 80px;
+  color: #fff; background-color: rgba(0, 0, 0, 0.7); 
+  text-align: center; transition:1s ease-in-out;}
+.click_text_box h2{font-size: 18px; margin-bottom: 30px;}
+.click_text_box span{font-size: 14px;}
 
-.schedule_wrap > div:hover .click_text_box{display:block; transition:1s all;}
+.schedule_wrap > div:hover .click_text_box{display:block; transition:1s ease-in-out;}
 
 
 footer{width: 100%; height: 200px; background-color: gray; border:1px solid aqua;}
