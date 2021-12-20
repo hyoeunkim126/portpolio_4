@@ -94,28 +94,21 @@ padding: 10px; margin: 0 auto;}
 
 
  /* 카메라들 */
-.product{width: 100%; height: 500px; background-color: rgb(240, 239, 238);}
-.product .product_box{width: 1200px; height: 100%; margin: 0 auto; 
-   display:flex; justify-content: center; }
-   .product .product_box .pro_content{width: 22%; height: 100%; margin: 20px; text-align: center;
-    background-color: gold; 
-    display: flex; flex-direction: column; justify-content: flex-end;}
-#leica_m_a{max-width: 100%; height: 80%; 
-  background: url("../img/m_a.png");
-  background-size: contain; background-position:top;
-  background-repeat: no-repeat;}
-#leica_sl2{max-width: 100%; height: 80%; 
-  background: url("../img/sl2_s.png");
-  background-size:contain; background-position: top;
-  background-repeat: no-repeat;}
-#monochrom{max-width: 100%; height: 80%; 
-  background: url("../img/monochrom.png");
-  background-size:contain; background-position: top;
-  background-repeat: no-repeat;}
-  #helinox{max-width: 100%; height: 80%; 
-    background: url("../img/19051_helinox.png");
-    background-size:contain; background-position: top;
-    background-repeat: no-repeat;}
+.product{width: 100%; height: 500px; 
+    background-color: rgb(240, 239, 238);}
+.product .container{position: relative; height: auto; overflow: hidden;}
+.product .product_box{width: 2000px; height: 90%; 
+    border: 1px solid red; padding: 0 20px;
+    display:flex; flex-wrap: wrap;  }
+.product .product_box .pro_content{
+    width: 280px; height: 100%; 
+    text-align: center; margin: 5px;
+    display: flex;  flex-direction: column; border: 1px solid gold;
+    }
+.pro_content img{width: 100%; }
+.product .container span{position: absolute; top: 50%; padding: 10px;}
+.prev{left: 0px;}
+.next{right: 0px;}
 
 
     /* 아카데미 스케줄  */
