@@ -99,7 +99,8 @@ padding: 10px; margin: 0 auto;}
 .product .container{position: relative; height: auto; overflow: hidden;}
 .product .product_box{width: 2000px; height: 90%; 
     border: 1px solid red; padding: 0 20px;
-    display:flex; flex-wrap: wrap;  }
+    display:flex; flex-wrap: wrap;
+    }
 .product .product_box .pro_content{
     width: 280px; height: 100%; 
     text-align: center; margin: 5px;
