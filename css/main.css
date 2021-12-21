@@ -95,7 +95,7 @@ padding: 10px; margin: 0 auto;}
 
  /* 카메라들 */
 .product {
-    width: 100%; height: 500px; 
+    width: 100%; height: 500px; position: relative;
     background-color: rgb(240, 239, 238);
   }
 .product .container {
@@ -103,19 +103,18 @@ padding: 10px; margin: 0 auto;}
     height: auto; overflow: hidden; 
   }
 .product .product_box {
-    width: 2350px; height: 500px; 
-    padding: 0 20px;
+    width: 2400px; height: 500px; 
   }
 .product .product_box .pro_content {
-    width: 280px; height: 100%; 
+    width: 300px; height: 100%; 
     text-align: center; float: left;
   }
 .pro_content img { width: 100%; }
 .product .container span {
-    position: absolute; top: 50%; padding: 10px;
+    position: absolute; top: 50%; 
   }
-.prev { left: 0px; cursor: pointer;}
-.next { right: 0px;}
+.prev { left: 0; cursor: pointer;}
+.next { right: 0px; cursor: pointer;}
 
 
     /* 아카데미 스케줄  */
