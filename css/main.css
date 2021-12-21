@@ -94,22 +94,28 @@ padding: 10px; margin: 0 auto;}
 
 
  /* 카메라들 */
-.product{width: 100%; height: 500px; 
-    background-color: rgb(240, 239, 238);}
-.product .container{position: relative; height: auto; overflow: hidden;}
-.product .product_box{width: 2000px; height: 90%; 
-    border: 1px solid red; padding: 0 20px;
-    display:flex; flex-wrap: wrap;
-    }
-.product .product_box .pro_content{
+.product {
+    width: 100%; height: 500px; 
+    background-color: rgb(240, 239, 238);
+  }
+.product .container {
+    width: 1200px; position: relative; 
+    height: auto; overflow: hidden; 
+  }
+.product .product_box {
+    width: 2350px; height: 500px; 
+    padding: 0 20px;
+  }
+.product .product_box .pro_content {
     width: 280px; height: 100%; 
-    text-align: center; margin: 5px;
-    display: flex;  flex-direction: column; border: 1px solid gold;
-    }
-.pro_content img{width: 100%; }
-.product .container span{position: absolute; top: 50%; padding: 10px;}
-.prev{left: 0px;}
-.next{right: 0px;}
+    text-align: center; float: left;
+  }
+.pro_content img { width: 100%; }
+.product .container span {
+    position: absolute; top: 50%; padding: 10px;
+  }
+.prev { left: 0px; cursor: pointer;}
+.next { right: 0px;}
 
 
     /* 아카데미 스케줄  */
