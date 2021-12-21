@@ -51,13 +51,13 @@ $(document).ready(function(){
         
 $(function(){
     $(".prev").click(function(){
-        $(".product_box").stop().animate({marginLeft:-280},500, function(){
+        $(".product_box").stop().animate({marginLeft:-300},500, function(){
             $(".product_box li:first").appendTo(".product_box");
             $(".product_box").css({marginLeft:0});
         });
     });
     $(".next").click(function(){
-        $(".product_box").stop().animate({marginLeft:280},500, function(){
+        $(".product_box").stop().animate({marginLeft:300},500, function(){
             $(".product_box li:last").prependTo(".product_box");
             $(".product_box").css({marginLeft:0});
         });
