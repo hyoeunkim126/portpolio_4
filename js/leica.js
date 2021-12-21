@@ -66,3 +66,38 @@ $(function(){
     });
 });    
 
+
+
+$(function(){
+    $(window).scroll(function(){
+        var ws=$(this).scrollTop();
+        // 아래쪽에서
+        if(ws>2600){
+            $('.schedule_photo:first-child').css("transform","translateY(0px)").css("opacity","1");
+        }
+        if(ws>2650){
+            $('.schedule_photo:nth-child(2)').css("transform","translateY(0px)").css("opacity","1");
+        }
+        if(ws>2700){
+            $('.schedule_photo:nth-child(3)').css("transform","translateY(0px)").css("opacity","1");
+        }
+        if(ws>2750){
+            $('.schedule_photo:nth-child(4)').css("transform","translateY(0px)").css("opacity","1");
+        }
+        if(ws>2800){
+            $('.schedule_photo:nth-child(5)').css("transform","translateY(0px)").css("opacity","1");
+        }
+        if(ws>2850){
+            $('.schedule_photo:nth-child(6)').css("transform","translateY(0px)").css("opacity","1");
+        }
+        if(ws>2900){
+            $('.schedule_photo:nth-child(7)').css("transform","translateY(0px)").css("opacity","1");
+        }
+        if(ws>2950){
+            $('.schedule_photo:last-child').css("transform","translateY(0px)").css("opacity","1");
+        }
+        if(ws>3000){
+            $('.schedule_photo:nth-child(2)').css("transform","translateY(0px)").css("opacity","1");
+        }
+    });
+});
