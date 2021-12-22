@@ -26,10 +26,10 @@ background-color: black; padding: 0 20px;}
 #slider .s_photo1 .slide li::after{content: ""; width: 100%; height: 650px; 
    background-color: black; position: absolute; top: 0; left: 0; opacity: 0.7; z-index: 0;}
 
-.slide{width: 100%; height: 100%;}  
+.slide{width: 100%; height: 650px;}  
 .slide li{width: 100%; height: 100%; position: absolute; top: 0; left: 0;}
 .slide li:not(:first-of-type) {display: none;}
-.slide li img{width: 100%; height: 100%; object-fit:none;  }
+.slide li img{width: 100%; height: 100%; object-fit: none; }
 #slider .s_photo1 .text_box{ width: 50%; height: 300px; position: absolute; 
   top:35%; z-index: 999; transition:ease-in 0.3s; padding-left: 30px; }
 #slider .text_box h2{color: white; font-size:2em; padding-bottom: 20px ;}
