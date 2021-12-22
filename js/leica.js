@@ -22,8 +22,7 @@ $(document).ready(function(){
             var contents = $("#slider .s_photo1 ul li");
 
             slidemenu.click(function(){
-                var target=$(this);
-                var index=target.index();
+                var index=$(this).index();
 
                 var photo  = contents.eq(index);
                 contents.not(photo).fadeOut("fast");
