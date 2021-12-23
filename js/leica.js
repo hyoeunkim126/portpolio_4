@@ -122,6 +122,8 @@ $(document).load($(window).bind("resize", schedulehover));
 function schedulehover(){
     if($(window).width()>400){
         $(".schedule_photo").mouseenter();
+        $(".click_text_box").css("display","block");
+
     }
 
 }
