@@ -163,6 +163,7 @@ background-color: black; padding: 0 20px;}
                     background-color: rgba(0, 0, 0, 0.123); padding: 20px;}
 
 .schedule_wrap > div:hover .click_text_box{display:block; transition:1s ease-in-out;}
+.schedule_wrap > div:active .click_text_box{display:block; transition:1s ease-in-out;}
 
 
 /* LEICA EXHIBITION */
