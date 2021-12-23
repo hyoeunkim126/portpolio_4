@@ -117,3 +117,11 @@ $(function(){
         
     });
 });
+
+$(document).load($(window).bind("resize", schedulehover));
+function schedulehover(){
+    if($(window).width()>400){
+        $(".schedule_photo").mouseenter();
+    }
+
+}
