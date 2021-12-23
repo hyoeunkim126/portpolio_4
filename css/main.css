@@ -1,61 +1,63 @@
 @charset "UTF-8";
 
 @media  (min-width:1200px) {
-.container{width: 1200px; height: 100%; margin: 0 auto; }
-.red_title{width: 100%; color: #ff0029; text-align: center;  padding-bottom: 20px;}
-.h1_title{width: 100%; text-align: center; font-size: 28px; 
-          padding-bottom: 50px; font-weight: 800;}
-.schedule_photo{transform: translateY(100px); transition: all 1s; opacity: 0;}
+
+.container { width: 1200px; height: 100%; margin: 0 auto; }
+.red_title { width: 100%; color: #ff0029; text-align: center;  padding-bottom: 20px;}
+.h1_title { width: 100%; text-align: center; font-size: 28px; 
+            padding-bottom: 50px; font-weight: 800;}
+.schedule_photo { transform: translateY(100px); transition: all 1s; opacity: 0;}
 
  /* 상단메뉴 */
-header{width: 100%; height: 100px; 
-  position: absolute; top: 0; left: 0; z-index: 3;}
-#logonav{display: flex; justify-content: space-between; align-items: center; 
-padding: 10px; margin: 0 auto;}
-#logonav .logo{width: 150px; height: 70px;}
-#logonav .logo img{width: 70%;}
+header { width: 100%; height: 100px; 
+         position: absolute; top: 0; left: 0; z-index: 3;}
+#logonav { display: flex; justify-content: space-between; align-items: center; 
+           padding: 10px; margin: 0 auto;}
+#logonav .logo { width: 150px; height: 70px;}
+#logonav .logo img { width: 70%;}
 
-.small_nav{display: none;}
-.nav_bar{width: 50%;}
-.nav_bar ul{display: flex; justify-content: space-around; }
-.nav_bar .nav_item .nav_link{font-size: 16px; color: #eee; font-weight: 800;
-  margin-left: 20px; font-family: 'Pretendard-Regular';
-  opacity: 0.6; transition: .3s all ease;}
+.small_nav { display: none; }
+#myNav { display: none; }
+.nav_bar { width: 50%;}
+.nav_bar ul { display: flex; justify-content: space-around; }
+.nav_bar .nav_item .nav_link { font-size: 16px; color: #eee; font-weight: 800;
+                                margin-left: 20px; font-family: 'Pretendard-Regular';
+                                opacity: 0.6; transition: .3s all ease;}
 
-.nav_bar .nav_item .nav_link:hover{opacity: 1;}  
+.nav_bar .nav_item .nav_link:hover { opacity: 1;}  
 
  /* 슬라이드 이미지  */
 #slider{width: 100%; height: 670px; }
 #slider .s_photo1 .slide li::after{content: ""; width: 50%; height: 750px; 
    background-color: black; position: absolute; top: 0; left: 0; opacity: 0.8; z-index: 0;}
 
-.slide{width: 100%; height: 100%;}  
-.slide li{width: 100%; height: 100%; position: absolute; top: 0; left: 0;}
-.slide li:not(:first-of-type) {display: none;}
-.slide li img{width: 100%; height: 100%; object-fit: cover; }
-#slider .s_photo1 .text_box{ width: 50%; height: 300px; position: absolute; 
+.slide { width: 100%; height: 100%;}  
+.slide li { width: 100%; height: 100%; position: absolute; top: 0; left: 0;}
+.slide li:not(:first-of-type) { display: none;}
+.slide li img { width: 100%; height: 100%; object-fit: cover; }
+#slider .s_photo1 .text_box { width: 50%; height: 300px; position: absolute; 
   top:30%; z-index: 999; transition:ease-in 0.3s; padding-left: 20px; }
-#slider .text_box h2{color: white; font-size:50px; padding-bottom: 20px ;}
-#slider .text_box h4{color: rgb(233, 233, 233); font-size:22px; padding-bottom: 20px ;}
-#slider .text_box div{height: 50px; width: 200px;;
-                     background-color: #ff0029 ; 
-                     display: flex; justify-content: center; align-items: center;}
-#slider .text_box div:hover{background-color: rgb(173, 173, 173);}
-#slider .text_box div a{color: white; text-align: center;}
-#slider .text_box div i{font-size: 20px; }
+#slider .text_box h2 { color: white; font-size:50px; padding-bottom: 20px ;}
+#slider .text_box h4 { color: rgb(233, 233, 233); font-size:22px; padding-bottom: 20px ;}
+#slider .text_box div { height: 50px; width: 200px;
+                        background-color: #ff0029 ; 
+                        display: flex; justify-content: center; align-items: center; }
+#slider .text_box div:hover { background-color: rgb(173, 173, 173); }
+#slider .text_box div a { color: white; text-align: center; }
+#slider .text_box div i { font-size: 20px; }
 
  /* 슬라이드 움직이면 메뉴이동 */
 .menu_slide_title{width: 100%; height:250px; position: relative; z-index: 1; }
 .menu_slide_title::after{width: 100%; height: 250px; background: url("../img/leica_fixed.jpg")fixed; 
     filter: brightness(0.1); content: ""; position: absolute; left: 0; top: 0; z-index: -1;}
-#slide_menu{height: 250px; }
+#slide_menu { height: 250px; }
 #slide_menu ul {display: flex; padding-top: 80px; }
-#slide_menu ul li{ width: 25%; height:80px; display: flex; align-items: center;
+#slide_menu ul li { width: 25%; height:80px; display: flex; align-items: center;
                    justify-content: center; margin: 5px; }  
-#slide_menu ul li a{color: rgb(255, 255, 255); text-align: center; padding-bottom: 10px;}
-#slide_menu ul li span{font-size: 20px; font-weight: 900; }
-#slide_menu ul li .second{font-size: 14px;}
-#slide_menu ul li a:hover{color:#ff0029; border-bottom:3px solid #ff0029}
+#slide_menu ul li a {color: rgb(255, 255, 255); text-align: center; padding-bottom: 10px;}
+#slide_menu ul li span {font-size: 20px; font-weight: 900; }
+#slide_menu ul li .second {font-size: 14px;}
+#slide_menu ul li a:hover {color:#ff0029; border-bottom:3px solid #ff0029}
 
 
 /* 보상 업그레이드 프로그램 */
