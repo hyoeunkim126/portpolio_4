@@ -100,3 +100,20 @@ $(function(){
         }
     });
 });
+
+
+// function openNav(){
+//     document.getElementById("myNav").style.height = "35%";
+// }
+
+// function closeNav(){
+//     document.getElementById("myNav").style.height = "0%";    
+// }
+
+$(function(){
+    $("#openNav").click(function(){
+        
+        $("#myNav").stop().slideToggle();
+        
+    });
+});
