@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@300;500;600&display=swap" rel="stylesheet">
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/common.css" rel="stylesheet">
+    <link href="css/sub1.css" rel="stylesheet">
+
+
+    <title>Leica</title>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+    <script src="js/leica.js"></script>
+    <script>
+        $(window).scroll(function(){
+            var ws=$(this).scrollTop();
+            // 아래쪽에서
+            if(ws>50){
+                $('.sub_slide_wrap h1').css("transform","translateY(0px)").css("opacity","1");
+            }
+        });
+    </script>
+    
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <div class="container" id="logonav">
+              <a href="index.html" class="logo"><img src="img/Leica_Geosystems_Logo.svg.png" alt="img"></a>
+              <div class="small_nav">
+                <img src="img/menu.png" id="openNav" alt="menuham" onclick="openNav()" style="width:25px;">
+              </div>
+                
+              <div  class="nav_bar">
+                <ul class="nav">
+                  <li class="nav_item"><a href="index.html" class="nav_link">라이카 카메라 코리아</a></li>
+                  <li class="nav_item"><a href="#" class="nav_link">제품소개</a></li>
+                  <li class="nav_item"><a href="#" class="nav_link">스토어</a></li>
+                  <li class="nav_item"><a href="#" class="nav_link">컨텐츠</a></li>
+                  <li class="nav_item"><a href="#" class="nav_link">아카데미</a></li>
+                  <li class="nav_item"><a href="#" class="nav_link">고객센터</a></li>
+                </ul>
+              </div>
+              <div id="myNav" class="overlay">
+                <div class="overlay-content">
+                    <a href="#">라이카 카메라 코리아</a>
+                    <a href="#">제품소개</a>
+                    <a href="#">스토어</a>
+                    <a href="#">컨텐츠</a>
+                    <a href="#">아카데미</a>
+                    <a href="#">고객센터</a>
+                </div>
+              </div>
+                
+            </div>
+        </header>
+        <section>
+            <div class="sub_slide_wrap">
+                <div class="fixed_q2" style="background-image: url('img/ov_sct01_01.jpg');"></div>
+                <div class="title_fixed">
+                    <h1>LEICA Q2</h1>
+                </div>
+                
+            </div>
+            
+            <div class="content_wrap">
+                <div class="column_layout1">
+                    <div>
+
+                    </div>
+                </div>
+            </div>
+        
+
+        </section>
+
+
+
+
+        
+        <footer>
+            <div class="container sitemap">
+                <div class="footer_wrap">
+                    <div class="f_list">
+                        <p>LEICA CAMERA KOREA</p>
+                        <ul>
+                            <li><a href="#">회사소개</a></li>
+                        </ul>
+                        <p>LEGAL</p>
+                        <ul>
+                            <li><a href="#">이용약관</a></li>
+                            <li><a href="#">개인정보처리방침</a></li>
+                        </ul>
+                    </div>
+                    <div class="f_list">
+                        <p>ONLINE SHOP</p>
+                        <ul>
+                            <li><a href="#">ALL Products</a></li>
+                            <li><a href="#">Leica S</a></li>
+                            <li><a href="#">Leica M</a></li>
+                            <li><a href="#">Leica SL2</a></li>
+                            <li><a href="#">Leica Q</a></li>
+                            <li><a href="#">CL and TL2</a></li>
+                            <li><a href="#">Compacts</a></li>
+                            <li><a href="#">S/O</a></li>
+                            <li><a href="#">Special</a></li>
+                            <li><a href="#">Second-Hand</a></li>
+                        </ul>
+                    </div>
+                    <div class="f_list">
+                        <p>AKADEMIE</p>
+                        <ul>
+                            <li><a href="#">라이카 아카데미 소개</a></li>
+                            <li><a href="#">아카데미 일정</a></li>
+                        </ul>
+                        <p>CUSTOMER SERVICE</p>
+                        <ul>
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">자주하는 질문(FAQ)</a></li>
+                            <li><a href="#">배송 및 교환 정책</a></li>
+                            <li><a href="#">1:1문의</a></li>
+                            <li><a href="#">매장안내</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="f_list">
+                        <p>CONTENTS</p>
+                        <ul>
+                            <li><a href="#">라이카 전시 일정</a></li>
+                        </ul>
+                        <p>CUSTOMER CARE</p>
+                        <ul>
+                            <li><a href="#">제품등록</a></li>
+                            <li><a href="#">다운로드</a></li>
+                            <li><a href="#">자료실</a></li>
+                        </ul>
+                    </div>
+                    <div class="f_list">
+                        <p>LOGIN / SIGN UP</p>
+                        <ul>
+                            <li><a href="#">Login Account</a></li>
+                            <li><a href="#">Sign Up</a></li>
+                        </ul>
+
+                        <p>SOCIAL</p>
+                        <ul class="social_icon">
+                            <li><a href="#"><ion-icon name="logo-instagram" style="font-size: 25px;"></ion-icon></a></li>
+                            <li><a href="#"><ion-icon name="logo-facebook" style="font-size: 25px;"></ion-icon></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="phone_num">
+                    <p>라이카 카메라 코리아(주) 대표자 : <span>수닐카울</span>      전화번호: <span>1661-0405</span><br>          서울시 강남구 테헤란로 208 안제타워 2층<br>
+                        사업자등록번호 : <span>211-88-55103</span>      통신판매업 신고번호 : <span>제2016-서울강남-01819호</span></p>
+                </div>
+                <div class="last_copyright">
+                    <p class="copyright">Copyright © 2020 Leica Camera Korea Ltd.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+</body>
+</html>
