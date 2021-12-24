@@ -1,0 +1,211 @@
+@charset "UTF-8";
+
+@media  (max-width:599.9px) {
+  #wrap{width: 100%; height: 100%;}
+  .container{width: 100%; height: 100%;}
+  
+ /* 상단메뉴 */
+header{width: 100%; height: 100px; 
+  position: absolute; top: 0; left: 0; z-index: 3;}
+#logonav{display: flex; justify-content: space-between; align-items: center; 
+background-color: black; padding: 0 20px;}
+#logonav .logo{width: 150px; height: 70px;}
+#logonav .logo img{width: 70%;}
+
+.nav_bar{display: none;}
+.small_nav{display: block; opacity: 0.8; cursor: pointer;}
+.nav_bar ul{display: flex; justify-content: space-around; }
+.nav_bar .nav_item .nav_link{font-size: 16px; color: #eee; font-weight: 800;
+  margin-left: 20px; font-family: 'Pretendard-Regular';
+  opacity: 0.6; transition: .3s all ease;}
+
+.nav_bar .nav_item .nav_link:hover{opacity: 1;}
+
+
+ /* 햄버거메뉴 클릭시 생성 */
+ #myNav { display: none; }
+ .overlay { height: auto; width: 100%; 
+   position: absolute;  top: 100px; left: 0; z-index: 999;
+   background-color: rgb(0,0,0);  }
+ .overlay-content { position: relative; top: 10px; width: 100%; 
+   text-align: left; padding: 0 0 20px 20px;}   
+ .overlay a { padding:3%; line-height:10%; text-decoration: none; 
+   font-size: 1rem; color: #eee; 
+   font-weight: bold; display: block;}
+
+ /* 슬라이드 이미지  */
+ #slider { width: 100%; height: 700px; }
+.slide { width: 100%; height: 100%;}  
+
+.slide li{ width: 100%; height: 300px;}  
+.slide li .slide_img { position: absolute; top: 100px;
+                        width: 100%; height: 50%; 
+                        background-position: center;
+                        background-size: cover;
+                        background-repeat: no-repeat;}
+.slide li:not(:first-of-type) { display: none;}
+#slider .s_photo1 .text_box { width: 100%; height: 400px; padding: 10px 0 0 20px; 
+  position: absolute; 
+  top:500px; z-index: 1; transition:ease-in 0.3s; padding-left: 30px; }
+#slider .text_box h2 { color: #666; font-size:1.8em; padding-bottom: 20px ;}
+#slider .text_box h4 { color: #666; font-size:1.3em; padding-bottom: 20px ;}
+#slider .text_box div { height: 50px; width: 200px;
+                        background-color: #ff0029; 
+                        display: flex; justify-content: center; align-items: center; }
+#slider .text_box div:hover { background-color: rgb(173, 173, 173); }
+#slider .text_box div a { color: white; text-align: center; }
+#slider .text_box div i { font-size: 20px; }
+
+ /* 슬라이드 움직이면 메뉴이동 */
+.menu_slide_title { width: 100%; height:100% ; position: relative; z-index: 1; }
+.menu_slide_title::after { width: 100%; height: 400px; 
+                            background: url("../img/leica_fixed.jpg")fixed; 
+                            filter: brightness(0.1); content: ""; 
+                            position: absolute; left: 0; top: 0; z-index: -1;}
+#slide_menu { height: 100%; }
+#slide_menu ul { width: 90%; margin: 0 auto;  display: flex; flex-flow:column wrap; 
+                 align-items: center; padding: 50px 0; }
+#slide_menu ul li { width : 100%; height : 80px; text-align: center; }  
+#slide_menu ul li a { color: rgb(255, 255, 255); 
+                      }
+#slide_menu ul li span { font-size: 1.2rem; font-weight: 800; }
+#slide_menu ul li .second { font-size: 0.8rem;}
+#slide_menu ul li a:hover { color:#ff0029; border-bottom:3px solid #ff0029; }
+
+
+
+
+/* 보상 업그레이드 프로그램 */
+#change_to_leica{width: 100%; height: 700px;    }
+#change_to_leica .container .left{width: 100%; height: 100%; }
+#change_to_leica .container .left .text_system{width: 100%; height: 100%;
+ padding: 400px 0 0 30px;  }
+
+ .left .text_system h1{font-size: 1.6em;}
+
+#change_to_leica .text_system div{ width: 200px; height: 40px;  
+  background-color: #ff0029 ; display: flex; justify-content: center; align-items: center;}
+#change_to_leica .text_system div:hover{background-color: rgb(173, 173, 173);}
+#change_to_leica .text_system div a{font-size: 14px; color: white; text-align: center;}
+#change_to_leica .text_system div i{font-size: 20px; }
+
+#change_to_leica .container .right{width:100%; height: 50%; margin-top: -720px;
+  background:url("../img/img_goods_banner08_210104.jpg");
+  background-size: cover; background-position: center;}
+
+  /* 중고제품 매입/판매 안내 */
+#customer_service{width: 100%; height: 700px;}
+
+#customer_service .container .left{width: 100%; height: 50%;
+  background: url("../img/service_left.jpg");
+  background-size: cover; background-position: center;}
+  #customer_service .container .right{width: 100%;}
+  #customer_service .container .right .text_system{width: 100%; 
+      height: 100%; padding: 200px 0 0 30px; margin: -150px 0 ; }
+.text_system h4{text-align: left;}
+.text_system h1{width: 100%; font-size: 1.6em; padding-bottom: 20px;}
+#customer_service .container .right .text_system div{ width: 200px; height: 40px;  
+  background-color: #ff0029 ; display: flex; justify-content: center; align-items: center;}
+  #customer_service .container .right .text_system div:hover{background-color: rgb(173, 173, 173);}
+  #customer_service .container .right .text_system div a{font-size: 14px; color: white; text-align: center;}
+  #customer_service .container .right .text_system div i{font-size: 20px; }
+
+
+ /* 카메라들 */
+.product {
+    width: 100%; height: 600px; position: relative;
+    background-color: rgb(240, 239, 238);
+  }
+.product .container {
+    width: 95%; position: relative; padding-top: 60px;
+    height: auto; margin: 0 auto; overflow: hidden; 
+  }
+.product .product_box {
+    width: 2400px; height: 500px; 
+  }
+.product .product_box .pro_content {
+    width: 300px; height: 100%; 
+    text-align: center; float: left;
+  }
+.pro_content img { width: 95%; }
+.pro_content a :hover{transform: translateY(-20px);}
+.pro_content h4{color: #666; margin-bottom: 20px;}
+.product .container span {
+    position: absolute; top: 50%; background-color: rgba(255, 255, 255, 0.74);
+    width: 40px; border-radius: 50%; text-align: center;
+    font-size: 20px; padding: 5px;
+  }
+.prev { left: 0; cursor: pointer;}
+.next { right: 0px; cursor: pointer;}
+
+.red_title{width: 100%; text-align: center; color: #ff0029; text-align: center;  padding-bottom: 20px;}
+.h1_title{width: 100%; text-align: center; font-size: 2em; 
+          padding-bottom: 50px; font-weight: 800;}
+
+
+    /* 아카데미 스케줄  */
+.works{width: 100%; height: auto;  padding: 50px 0;
+      display: flex; flex-wrap: wrap; justify-content: center; 
+      align-content: flex-start; }
+
+.works .schedule_wrap{width: 100%; height: auto; display: flex;
+                     flex-wrap: wrap; justify-content: center; }
+.schedule_wrap .schedule_photo { background-position: center;  
+                                 background-size: cover; 
+                                 background-repeat: no-repeat;
+                                 width: 90%; height: 300px; margin: 1%; 
+                                 position: relative; }  
+.click_text_box { display: none; position: absolute; top:0; left: 0; 
+  width: 100%; height: 100%; padding-top: 100px;
+  color: #fff; background-color: rgba(0, 0, 0, 0.7); 
+  text-align: center; transition: all .3s ease;}
+.click_text_box h2 { font-size: 18px; margin-bottom: 30px;}
+.click_text_box span { font-size: 14px;}
+.click_text_box .icon ion-icon{color: #fff; font-size: 12px; 
+                      position: absolute; right: 0; bottom: 0; width: 40px; height: 40px;
+                    cursor: zoom-in; border-radius: 50%; 
+                    background-color: rgba(0, 0, 0, 0.123); padding: 20px;}
+
+.schedule_wrap > div:hover .click_text_box{display:block; transition:1s ease-in-out;}
+
+
+/* LEICA EXHIBITION */
+.exhibition_wrap{width: 100%; height: auto; 
+                  background-color: rgb(240, 239, 238);}
+.exhibition{width: 100%; margin: 0 auto; 
+            padding: 50px 0; }
+.photo_exhibition_box{width: 95%; height: 620px; background-color: #fff; margin: 0 auto;}
+.photo_exhibition1{width: 100%; height: 400px; 
+                    background-position: center; 
+                    background-size: cover; 
+                    background-repeat: no-repeat;}
+.text_ex {padding: 20px;}
+.text_ex h4{color:rgb(110, 110, 110); padding-bottom: 10px;}
+.text_ex h1{padding-bottom: 20px; font-size: 1.8em;}
+.text_ex div{ width: 200px; height: 40px;  
+  background-color: #ff0029 ; display: flex; justify-content: center; align-items: center;}
+.text_ex div a{font-size: 14px; color: white; text-align: center;}
+
+
+/* 푸터 */
+footer { width: 100%; height: 100%; padding: 4em 0 0 0;
+       background-color: rgb(17, 17, 17); }
+.sitemap .footer_wrap { width: 90%; margin: 0 auto; display: flex; flex-wrap: wrap;}
+.sitemap .footer_wrap div { width: 28%; margin-right: 5%;}
+.sitemap .f_list p { font-size: 0.8em; 
+                font-weight: 700;
+                color: #fff;
+                margin-top: 10%;}
+.sitemap div a { font-size: 0.6em; font-weight: bold;
+   color: rgba(255, 255, 255, 0.5); }
+.social_icon { display: flex; margin-top: 10%;}
+.social_icon a { margin: 1%;}
+
+.phone_num { text-align: center; font-size: 0.6em; padding-top: 10%; margin-top: 30px;
+  height: 150px; color: #eee; line-height: 25px; }
+.phone_num span { color: rgb(100, 100, 100);}
+.last_copyright p { color: rgb(100, 100, 100); text-align: center; font-size: 0.6em;
+                    padding-bottom: 20px;}
+
+
+}
