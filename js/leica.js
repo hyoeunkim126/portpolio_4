@@ -1,23 +1,26 @@
-var currentScrollTop=0;
-$(document).ready(function(){
+
+        // 스크롤 900이상일때 메뉴바 나타남
+        var currentScrollTop=0;
+        $(document).ready(function(){
+        scrollController();
+        $(window).scroll(function(){
             scrollController();
-            $(window).scroll(function(){
-                scrollController();
-                });
             });
-            function scrollController(){
-            currentScrollTop = $(window).scrollTop();
-                if(currentScrollTop > 900) { 
-                    $("header").addClass("active");
-                    $(".nav_link").css("color", "#333");
-                    }else{
-                    $("header").removeClass("active");
-                    $(".nav_link").css("color", "#eee");
-                        }
-                    }
+        });
+        function scrollController(){
+        currentScrollTop = $(window).scrollTop();
+        if(currentScrollTop > 900) { 
+            $("header").addClass("active");
+            $(".nav_link").css("color", "#333");
+            }else{
+            $("header").removeClass("active");
+            $(".nav_link").css("color", "#eee");
+                }
+            }
 
 
- $(function(){
+        // 4개 메뉴 클릭시 해당 슬라이드이미지 페이드인
+        $(function(){
             var slidemenu = $("#slide_menu ul li");
             var contents = $("#slider .s_photo1 ul li");
 
@@ -32,7 +35,7 @@ $(document).ready(function(){
 
 
 
-                            
+        // 슬라이드 이미지 
 
         var i=0;
         function slide(){
@@ -118,12 +121,3 @@ $(function(){
     });
 });
 
-$(document).load($(window).bind("resize", schedulehover));
-function schedulehover(){
-    if($(window).width()>400){
-        $(".schedule_photo").mouseenter();
-        $(".click_text_box").css("display","block");
-
-    }
-
-}
