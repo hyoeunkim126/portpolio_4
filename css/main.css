@@ -27,16 +27,21 @@ header { width: 100%; height: 100px;
 .nav_bar .nav_item .nav_link:hover { opacity: 1;}  
 
  /* 슬라이드 이미지  */
-#slider{width: 100%; height: 670px; }
-#slider .s_photo1 .slide li::after{content: ""; width: 50%; height: 750px; 
+#slider { width: 100%; height: 600px; }
+#slider .s_photo1 .slide li::after { content: ""; width: 50%; height: 600px; 
    background-color: black; position: absolute; top: 0; left: 0; opacity: 0.8; z-index: 0;}
 
 .slide { width: 100%; height: 100%;}  
-.slide li { width: 100%; height: 100%; position: absolute; top: 0; left: 0;}
+/* .slide li { padding-top: 100%;} */
+.slide li .slide_img { position: absolute; width: 100%; height: 100%; 
+                        top: 0; left: 0; right: 0; bottom: 0;
+                        background-position: center;
+                        background-size: cover;
+                        background-repeat: no-repeat;}
 .slide li:not(:first-of-type) { display: none;}
-.slide li img { width: 100%; height: 100%; object-fit: cover; }
+
 #slider .s_photo1 .text_box { width: 50%; height: 300px; position: absolute; 
-  top:30%; z-index: 999; transition:ease-in 0.3s; padding-left: 20px; }
+  top:30%; z-index: 1; transition:ease-in 0.3s; padding-left: 20px; }
 #slider .text_box h2 { color: white; font-size:50px; padding-bottom: 20px ;}
 #slider .text_box h4 { color: rgb(233, 233, 233); font-size:22px; padding-bottom: 20px ;}
 #slider .text_box div { height: 50px; width: 200px;
