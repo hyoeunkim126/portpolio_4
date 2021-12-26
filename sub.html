@@ -16,13 +16,11 @@
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
     <script src="js/leica.js"></script>
     <script>
-        $(window).scroll(function(){
-            var ws=$(this).scrollTop();
-            // 아래쪽에서
-            if(ws>50){
-                $('.sub_slide_wrap h1').css("transform","translateY(0px)").css("opacity","1");
-            }
+        $(document).ready(function(){
+            $('.sub_slide_wrap h1,h3').css("transform","translateY(0px)").css("opacity","1");
+            
         });
+
     </script>
     
 </head>
@@ -63,16 +61,19 @@
                 <div class="fixed_q2" style="background-image: url('img/ov_sct01_01.jpg');"></div>
                 <div class="title_fixed">
                     <h1>LEICA Q2</h1>
+                    <h3>한치의 오차도 없는 완벽함</h3>
                 </div>
-                
             </div>
             
             <div class="content_wrap">
-                <div class="column_layout1">
-                    <div>
-
+                <div class="container">
+                    <div class="column_layout1">
+                        <div class="border">
+    
+                        </div>
                     </div>
                 </div>
+                
             </div>
         
 
