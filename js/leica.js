@@ -115,9 +115,12 @@ $(function(){
 
 $(function(){
     $("#openNav").click(function(){
-        
-        $("#myNav").stop().slideToggle();
+        $("#myNav").stop().slideToggle();  
+    });
+    $(window).resize(function(){
+        $("#myNav").slideUp().hide();
         
     });
+
 });
 
