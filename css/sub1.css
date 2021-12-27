@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+#wrap { width: 100%; height: auto;}
 section { width: 100%; height: 100%;}
 .sub_slide_wrap { width: 100%; height: 1000px; 
     position: relative; }
@@ -22,14 +23,35 @@ section { width: 100%; height: 100%;}
                     transform: translateY(80px); 
                     transition: all 2s; opacity: 0;}  
                     
-.content_wrap { width: 100%; height: 500px; 
-                background-color: rgba(0, 0, 0, 0.541);}
-.content_wrap .container { width: 1200px; height: 100%;
-                            border: 1px solid red; }
-.column_layout { align-self: center;
-    margin-left: auto; 
-    margin-right: auto;
-    width: 100%;
-    max-width: 40%;}
-.border { border-color: #ec4858;
-    border-top-width: 16px; }
+.sepc_info { width: 100%; height: 1100px; 
+                background-color: rgb(0, 0, 0, 0.8);}
+.sepc_info .container { width: 1200px; height: 100%; }
+
+.border { width: 40%; margin: 0 auto;
+          border-top: 16px solid #ff0029; }
+
+.title_heading_center { display: flex; flex-wrap: wrap; justify-content: center;}
+.title_heading_center h1 { width: 100%; text-align: center;
+                        padding-top: 50px; font-size: 50px;
+                        line-height: 50px; color: #fff;}
+.title_heading_center .line { border-bottom: 2px solid rgb(75, 75, 75) ;
+                            width: 30%; height: 20px; padding-bottom: 50px;}
+.title_heading_center h4 { width: 100%; text-align: center;
+                        padding: 50px 0; font-size: 25px; font-weight: lighter;
+                        line-height: 40px; color: #eee ;}
+
+.spec { display: flex; flex-wrap: wrap; justify-content: center;
+        margin: 20px;}
+.spec_info1 { width: 30%; height: 300px; margin: 10px; background-position: center; background-size: cover;}
+
+.summilux_info { width: 100%; height: 500px; 
+        background-color: rgba(0, 0, 0, 0.9);}
+.sum_content { display: flex; width: 100%; height: 500px; position: relative;}
+.left_text_box { width: 50%; height: 100%; padding: 20px; background-color: rgb(34, 34, 34); padding-left: 20%;
+position: absolute;  }
+.left_text_box h1 { width: 100%; font-size: 40px; 
+color: #fff; padding-top: 100px; }
+.left_text_box p { width: 100%; color: #eee; padding-top: 50px; font-size: 18px; line-height: 30px; font-weight: lighter;}
+.right_text_box { width: 50%; height: 100%; background-position: center; background-size: cover;  position: absolute; right: 0;}
+
+.img_quality { width: 100%; height: 700px; background-color: cadetblue;}
