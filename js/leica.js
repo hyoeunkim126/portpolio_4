@@ -9,7 +9,7 @@
         });
         function scrollController(){
         currentScrollTop = $(window).scrollTop();
-        if(currentScrollTop > 900) { 
+        if(currentScrollTop > 860) { 
             $("header").addClass("active");
             $(".nav_link").css("color", "#333");
             }else{
