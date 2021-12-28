@@ -5,7 +5,7 @@ section { width: 100%; height: 100%;}
 .sub_slide_wrap { width: 100%; height: 1000px; 
     position: relative; }
 .fixed_q2 { width: 100%; height: 1000px; 
-            background-position-y: 2%;
+            background-position-y: -20%;
             background-size: cover; 
             background-attachment: fixed; z-index: 0;
             filter: brightness(0.4); 
@@ -22,7 +22,9 @@ section { width: 100%; height: 100%;}
                     font-size: 50px;
                     transform: translateY(80px); 
                     transition: all 2s; opacity: 0;}  
-                    
+              
+ /* 6개 info */
+
 .sepc_info { width: 100%; height: 1100px; 
                 background-color: rgb(0, 0, 0, 0.8);}
 .sepc_info .container { width: 1200px; height: 100%; }
@@ -42,16 +44,76 @@ section { width: 100%; height: 100%;}
 
 .spec { display: flex; flex-wrap: wrap; justify-content: center;
         margin: 20px;}
-.spec_info1 { width: 30%; height: 300px; margin: 10px; background-position: center; background-size: cover;}
+.spec_info1 { width: 30%; height: 300px; margin: 10px; 
+        background-position: center; background-size: cover;
+        transform: rotateX(0); opacity: 1;}
+.slide_title_info { display: none;
+                width: 100%; height: 100%;
+                background-color: #000; opacity: 0.9;
+                padding: 60px 25px; border: 8px solid rgba(238, 238, 238, 0.2);}
+.slide_title_info h3 { color: #fff; font-size: 30px;
+                        padding-bottom: 30px;}      
+.slide_title_info p { color: #eee; font-size: 14px; line-height: 25px;}  
 
-.summilux_info { width: 100%; height: 500px; 
+
+
+
+/* 주미룩스 렌즈 */
+.summilux_info { width: 100%; height: 600px; 
         background-color: rgba(0, 0, 0, 0.9);}
-.sum_content { display: flex; width: 100%; height: 500px; position: relative;}
-.left_text_box { width: 50%; height: 100%; padding: 20px; background-color: rgb(34, 34, 34); padding-left: 20%;
-position: absolute;  }
+.sum_content { display: flex; width: 100%; height: 100%; position: relative;}
+.left_text_box { width: 600px; height: 100%; padding: 60px; 
+        /* background-color: rgb(34, 34, 34);  */
+        position: absolute; left: 50%; margin-left: -600px; }
 .left_text_box h1 { width: 100%; font-size: 40px; 
-color: #fff; padding-top: 100px; }
-.left_text_box p { width: 100%; color: #eee; padding-top: 50px; font-size: 18px; line-height: 30px; font-weight: lighter;}
-.right_text_box { width: 50%; height: 100%; background-position: center; background-size: cover;  position: absolute; right: 0;}
+color: #fff; padding-top: 80px; }
+.left_text_box  .line { border-bottom: 1px solid #ff0029 ;
+        width: 60%; height: 20px; padding-top: 20px; }
+.left_text_box p { width: 100%; color: #eee; padding-top: 50px; 
+        font-size: 19px; line-height: 30px; font-weight: lighter;}
+.right_text_box { width: 50%; height: 100%; background-position: center; 
+        background-size: cover; background-repeat: no-repeat;  
+        position: absolute; right: 0;}
 
-.img_quality { width: 100%; height: 700px; background-position: center; background-size: cover;}
+
+/* 이미지 퀄리티 */
+
+.day_and_night { width: 100%; height: 500px; background-color: rgb(240, 239, 238);}
+.title_quality_center h5 { width: 100%; text-align: center;
+                        padding-top: 50px; font-size: 25px; font-weight: lighter;
+                        line-height: 40px; color: #666 ; }
+.title_quality_center .line { border-bottom: 1px solid #ff0029 ;
+                        width: 15%; height: 20px; margin: 0 auto;}
+.title_quality_center h1 { width: 100%; text-align: center;
+                        padding-top: 50px; font-size: 50px;
+                        line-height: 50px; color: #000;}
+.title_quality_center p { font-size: 19px; line-height: 30px; 
+                        padding-top: 50px; text-align: center;}
+
+.img_quality { width: 100%; height: 900px; 
+               background-position: center; background-size: cover;}
+
+/* 뷰파인더 */
+
+.viewfinder { width: 100%; height:680px; background-color: black;}
+.view_content { display: flex; width: 100%; height: 100%; position: relative; }
+
+
+/* 견고함 */
+.last_content { width: 100%; height: 700px; background-color: rgb(240, 239, 238);}
+.last_content .container { height: 400px;}
+.title_outstanding_center h5 { width: 100%; text-align: center;
+        padding-top: 50px; font-size: 25px; font-weight: lighter;
+        line-height: 40px; color: #666 ; }
+.title_outstanding_center .line { border-bottom: 1px solid #ff0029 ;
+        width: 15%; height: 20px; margin: 0 auto;}
+.title_outstanding_center h1 { width: 100%; text-align: center;
+        padding-top: 50px; font-size: 50px;
+        line-height: 50px; color: #000;}
+.title_outstanding_center p { font-size: 19px; line-height: 30px; 
+        padding-top: 50px; text-align: center;}
+
+.last_photo { width: 100%; height: 300px; display: flex; flex-direction: row;}
+.last_photo div { width: 100%; height: 300px; 
+        background-position: center; background-size: cover;
+}
